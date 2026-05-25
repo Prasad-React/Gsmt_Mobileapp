@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+
 import {
   Modal,
   StyleSheet,
@@ -8,7 +9,6 @@ import {
   View,
 } from "react-native";
 import api from "../utils/axiosConfig";
-
 
 export default function RouteManagement() {
   const [source, setSource] = useState("");
@@ -82,7 +82,6 @@ export default function RouteManagement() {
     </View>
   );
 }
-
 const styles = StyleSheet.create({
   container:{flex:1,padding:20,justifyContent:"center"},
   title:{fontSize:24,fontWeight:"bold",marginBottom:20},

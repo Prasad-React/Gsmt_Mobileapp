@@ -1,5 +1,6 @@
 import { useRouter } from "expo-router";
 import { useState } from "react";
+
 import {
   Modal,
   StyleSheet,
@@ -78,6 +79,7 @@ setIsSuccess(true);
           </Text>
 
         </TouchableOpacity>
+
       <Text style={styles.title}>Create Employee</Text>
 
       <TextInput
@@ -134,7 +136,6 @@ setIsSuccess(true);
       <TouchableOpacity style={styles.button} onPress={createEmployee}>
         <Text style={styles.buttonText}>Create</Text>
       </TouchableOpacity>
-       
       {/* Modal */}
       <Modal
         transparent
@@ -190,7 +191,6 @@ backButton: {
     fontWeight: "bold",
     fontSize: 15,
   },
-
   modalBox:{
     width:"80%",
     backgroundColor:"#fff",

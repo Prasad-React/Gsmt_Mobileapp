@@ -1,5 +1,4 @@
 import { useRouter } from "expo-router";
-import React from "react";
 import {
   ScrollView,
   StyleSheet,
@@ -77,6 +76,7 @@ export default function AdminDashboard() {
       <TouchableOpacity style={styles.actionButton} onPress={() => router.push("./AttendanceReports")}>
         <Text style={styles.actionText}>📊 Attendance Reports</Text>
       </TouchableOpacity>
+
 
       {/* Logout */}
       <TouchableOpacity
